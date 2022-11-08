@@ -1167,7 +1167,7 @@ static int cam_ife_hw_mgr_acquire_res_ife_csid_rdi(
 				goto err;
 			}
 
-			csid_res->res_type = CAM_ISP_RESOURCE_PIX_PATH;
+			csid_res->res_type = (enum cam_ife_hw_mgr_res_type)CAM_ISP_RESOURCE_PIX_PATH;
 			csid_res->res_id = csid_acquire.res_id;
 			csid_res->is_dual_vfe = 0;
 			csid_res->hw_res[0] = csid_acquire.node_res;
