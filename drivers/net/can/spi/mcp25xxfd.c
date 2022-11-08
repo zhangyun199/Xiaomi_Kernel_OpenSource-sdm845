@@ -4263,7 +4263,7 @@ static int mcp25xxfd_can_probe(struct spi_device *spi)
 		CAN_CTRLMODE_ONE_SHOT;
 
 	if (of_id)
-		priv->model = (enum mcp25xxfd_model)of_id->data;
+		priv->model = (enum mcp25xxfd_model)(long)of_id->data;
 	else
 		priv->model = spi_get_device_id(spi)->driver_data;
 
