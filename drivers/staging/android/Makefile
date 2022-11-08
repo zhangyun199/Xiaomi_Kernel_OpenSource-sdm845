@@ -7,3 +7,4 @@ obj-$(CONFIG_ASHMEM)			+= ashmem.o
 obj-$(CONFIG_ANDROID_LOW_MEMORY_KILLER)	+= lowmemorykiller.o
 obj-$(CONFIG_ANDROID_WHETSTONE)	        += memsw_state.o
 obj-$(CONFIG_ANDROID_VSOC)		+= vsoc.o
+subdir-ccflags-y := $(call cc-disable-warning, enum-conversion)
