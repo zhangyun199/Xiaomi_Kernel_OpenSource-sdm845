@@ -18,6 +18,7 @@
 * \brief Contains all the macro and prototypes to handle the Gesture Detection features
 */
 
+#include <linux/types.h>
 #ifndef FTS_GESTURE_H_
 #define FTS_GESTURE_H_
 

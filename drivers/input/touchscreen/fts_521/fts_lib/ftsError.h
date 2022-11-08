@@ -18,6 +18,7 @@
 * \brief Contains all the definitions and structs which refer to Error conditions
 */
 
+#include <linux/types.h>
 #ifndef FTS_ERROR_H
 #define FTS_ERROR_H
 
